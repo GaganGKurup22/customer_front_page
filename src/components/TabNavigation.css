@@ -1,35 +1,30 @@
 .tab-navigation {
     display: flex;
-    justify-content: center;
-    padding: 20px 0;
-    background-color: #e0e0e0;
+    justify-content: center; /* Center the buttons */
+    align-items: center;
+    margin: 40px 0; /* Add more vertical space */
   }
   
   .tab {
-    background-color: #fff;
+    background-color: #4CAF50; /* Set button color to green */
+    color: white; /* Make text white for contrast */
     border: none;
-    padding: 12px 24px;
-    margin: 0 10px;
+    padding: 20px 50px; /* Increase button size */
+    margin: 0 20px; /* Add space between buttons */
     border-radius: 30px;
-    font-size: 1rem;
-    transition: all 0.3s ease;
+    font-size: 1.3rem; /* Increase font size */
+    transition: background-color 0.3s ease;
     cursor: pointer;
-    color: #333;
-    font-weight: 600;
   }
   
   .tab:hover {
-    background-color: #f0f0f0;
-  }
-  
-  .tab:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.5);
+    background-color: #45a049; /* Darken green on hover */
   }
   
   @media (min-width: 1024px) {
     .tab {
-      font-size: 1.1rem;
-      padding: 15px 40px;
+      font-size: 1.4rem; /* Increase font size on larger screens */
+      padding: 20px 60px; /* Increase button size for large screens */
     }
   }
+  

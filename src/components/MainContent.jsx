@@ -14,9 +14,9 @@ function MainContent() {
           <p>"Sowing the seeds of tomorrow, one harvest at a time."</p>
         </div>
       </div>
-      {/* <div className="illustration">
-        <img src="/path_to_illustration" alt="Farmer illustration" />
-      </div> */}
+      <div className="illustration">
+        <img src="download-removebg-preview.png" alt="Farmer illustration" />
+      </div>
     </div>
   );
 }

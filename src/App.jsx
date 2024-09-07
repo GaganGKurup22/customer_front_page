@@ -8,12 +8,8 @@ function App() {
   return (
     <div className="app">
       <Header />
-      <div className="content-container">
-        <main className="main-container">
-          <TabNavigation />
-          <MainContent />
-        </main>
-      </div>
+      <TabNavigation /> {/* Placed below the header */}
+      <MainContent />
     </div>
   );
 }

@@ -1,39 +1,48 @@
 .header {
-    background-color: #4CAF50;
-    padding: 15px 0;
-  }
-  
-  .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1800px;
-    margin: 0 auto;
-    padding: 0 20px;
+    width: 100%;
+    padding: 20px 50px;
+    background-color: #4CAF50;
+    box-sizing: border-box;
+    position: relative; /* Allows positioning adjustments */
+    margin-top: 100px; /* Adds space below the header */
   }
   
   .logo {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
   }
   
   .logo-og {
     color: #ffc107;
+    margin-right: 10px; /* Space between 'OG' and 'KISAN' */
   }
   
   .logo-kisan {
     color: white;
   }
   
+  .profile-icon {
+    margin-left: auto; /* Pushes profile icon to the far right */
+    display: flex;
+    align-items: center; /* Vertically align profile icon */
+  }
+  
   .profile-icon img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    object-fit: cover;
   }
   
   @media (min-width: 1024px) {
-    .header-content {
-      padding: 0 40px;
+    .header {
+      padding: 20px 100px;
+    }
+  
+    .logo {
+      font-size: 3rem;
     }
   }
+  

@@ -1,84 +1,62 @@
 .main-content {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    padding: 40px 20px;
-    height: 100%;
-    max-width: 1800px;
-    margin: 0 auto;
+    position: relative; /* Allows positioning of the illustration */
+    min-height: 80vh; /* Ensure the content fills a good portion of the viewport */
+    padding: 20px;
   }
   
   .content-wrapper {
-    flex: 1;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
+    z-index: 1; /* Ensures the buttons and quote stay on top of the illustration */
+    margin-bottom: 50px; /* Adds space below the content-wrapper */
+    position: relative; /* Allows positioning of the buttons */
+    top: -50px; /* Move the content-wrapper up */
   }
   
   .buttons {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    width: 100%;
+    gap: 15px;
   }
   
   .main-btn {
     background-color: #4CAF50;
     color: white;
     border: none;
-    padding: 15px 0;
+    padding: 15px 60px;
     border-radius: 30px;
     font-size: 1.2rem;
-    width: 100%;
-    max-width: 300px;
+    width: 300px;
     transition: all 0.3s ease;
     cursor: pointer;
-    font-weight: 600;
   }
   
   .main-btn:hover {
     background-color: #45a049;
   }
   
-  .main-btn:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.5);
-  }
-  
   .quote {
-    margin-top: 40px;
+    margin-top: 60px;
     font-size: 1.4rem;
     color: #333;
     font-style: italic;
-    text-align: center;
   }
   
   .illustration {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 50%;
+    position: absolute;
+    bottom: 300px; /* Adjust the space from the bottom */
+    right: -320px; /* Adjust the space from the right */
+    z-index: 0; /* Position the illustration behind the buttons/quote */
+    max-width: 35%; /* Adjust size to fit the layout */
+    max-height: 35%;
+    opacity: 0.9; /* Optional: Slight transparency for aesthetic */
   }
   
   .illustration img {
-    max-width: 100%;
+    width: 200%; /* Ensure the image scales correctly */
     height: auto;
   }
   
-  @media (max-width: 1023px) {
-    .main-content {
-      flex-direction: column;
-      padding: 20px;
-    }
-  
-    .content-wrapper, .illustration {
-      max-width: 100%;
-    }
-  
-    .illustration {
-      margin-top: 40px;
-    }
-  }
