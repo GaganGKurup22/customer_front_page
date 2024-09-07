@@ -1,0 +1,39 @@
+.header {
+    background-color: #4CAF50;
+    padding: 15px 0;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .logo-og {
+    color: #ffc107;
+  }
+  
+  .logo-kisan {
+    color: white;
+  }
+  
+  .profile-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  @media (min-width: 1024px) {
+    .header-content {
+      padding: 0 40px;
+    }
+  }

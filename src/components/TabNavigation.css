@@ -1,0 +1,35 @@
+.tab-navigation {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: #e0e0e0;
+  }
+  
+  .tab {
+    background-color: #fff;
+    border: none;
+    padding: 12px 24px;
+    margin: 0 10px;
+    border-radius: 30px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .tab:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .tab:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.5);
+  }
+  
+  @media (min-width: 1024px) {
+    .tab {
+      font-size: 1.1rem;
+      padding: 15px 40px;
+    }
+  }
